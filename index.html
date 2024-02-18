@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This is the best movies website made by AK Arafat." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="AK Arafat" />
+    <meta name="theme-color" content="#db0028" />
+    <!-- Website Favicon -->
+    <link rel="icon" href="favicon.svg" />
+    <!-- Normalize Library -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Swiper Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <title>Tvflix - Home Page</title>
+  </head>
+  <body>
+    <!-- Start Page Loader -->
+    <div class="page-loader" id="pageLoader">
+      <span class="loader"></span>
+    </div>
+    <!-- End Page Loader -->
+    <!-- Start Header -->
+    <header>
+      <a href="index.html" title="Home Page" class="logo"><img src="imgs/logo.svg" alt="Tvflix - Logo" /></a>
+    
+      <div class="buttons">
+        <button class="header-btn" id="searchBtn"><i class="fas fa-magnifying-glass icon"></i></button>
+        <button class="header-btn" id="genresListToggle"><i class="fas fa-bars icon"></i></button>
+      </div>
+
+      <div class="search-bar">
+        <i class="fas fa-magnifying-glass icon"></i>
+        <input type="search" name="q" id="searchInput" placeholder="Search any movie..." />
+        <button class="header-btn" id="searchCloseBtn"><i class="fas fa-xmark icon"></i></button>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Genres List -->
+    <aside class="genres-list">
+      <div class="content">
+        <h4>Genre</h4>
+        <div class="links">
+          <a href="movies-list.html" data-id="12">Adventure</a>
+          <a href="movies-list.html" data-id="14">Fantasy</a>
+          <a href="movies-list.html" data-id="16">Animation</a>
+          <a href="movies-list.html" data-id="18">Drama</a>
+          <a href="movies-list.html" data-id="27">Horror</a>
+          <a href="movies-list.html" data-id="28">Action</a>
+          <a href="movies-list.html" data-id="35">Comedy</a>
+          <a href="movies-list.html" data-id="36">History</a>
+          <a href="movies-list.html" data-id="37">Western</a>
+          <a href="movies-list.html" data-id="53">Thriller</a>
+          <a href="movies-list.html" data-id="80">Crime</a>
+          <a href="movies-list.html" data-id="10749">Romance</a>
+          <a href="movies-list.html" data-id="10751">Family</a>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>
+          Copyright <span class="year">2024</span>. <br />
+          By <span>AK Arafat</span>
+        </p>
+        <img src="imgs/tmdb-logo.svg" alt="TMDB Logo" />
+      </div>
+    </aside>
+    <!-- End Genres List -->
+    <!-- Start Page Main Container -->
+    <main class="main-container">
+      <!-- Start Hero Section -->
+      <section class="hero swiper">
+        <div class="hero-slider">
+          <div class="banner active" data-id="212989" data-type="show">
+            <img src="imgs/hero_banners/ninjago-banner.avif" alt="LEGO Ninjago: Dragons Rising" class="background">
+            <div class="text">
+              <h1>LEGO Ninjago: Dragons Rising</h1>
+              <div class="info">
+                <span class="date">2023</span>
+                <span class="rate">8.1</span>
+              </div>
+              <p>
+                Two teenagers from different worlds use their newly discovered Ninja powers to defend dragons from villains who want to
+                use their life-force for evil.
+              </p>
+              <a href="movie-details.html" class="main-btn view-movie-btn"><i class="far fa-play-circle icon"></i> Watch Now</a>
+            </div>
+          </div>
+
+          <div class="banner" data-id="34109" data-type="show">
+            <img src="imgs/hero_banners/bakugan-banner.avif" alt="Bakugan Battle Brawlers" class="background">
+            <div class="text">
+              <h1>Bakugan Battle Brawlers</h1>
+              <div class="info">
+                <span class="date">2007</span>
+                <span class="rate">8.3</span>
+              </div>
+              <p>
+                Centers on the lives of creatures called Bakugan and the battle brawlers who possess them.
+              </p>
+              <a href="movie-details.html" class="main-btn view-movie-btn"><i class="far fa-play-circle icon"></i> Watch Now</a>
+            </div>
+          </div>
+
+          <div class="banner" data-id="67667" data-type="show">
+            <img src="imgs/hero_banners/beyblade-banner.avif" alt="Beyblade Burst" class="background">
+            <div class="text">
+              <h1>Beyblade Burst</h1>
+              <div class="info">
+                <span class="date">2016</span>
+                <span class="rate">8.3</span>
+              </div>
+              <p>
+                Middle schooler Valt Aoi, with his Beyblade Valtryek, faces off against friends, classmates and rivals to become the
+                world's number one Blader.
+              </p>
+              <a href="movie-details.html" class="main-btn view-movie-btn"><i class="far fa-play-circle icon"></i> Watch Now</a>
+            </div>
+          </div>
+
+          <div class="banner" data-id="346698" data-type="movie">
+            <img src="imgs/hero_banners/barbie-banner.avif" alt="Barbie" class="background">
+            <div class="text">
+              <h1>Barbie</h1>
+              <div class="info">
+                <span class="date">2023</span>
+                <span class="rate">7.1</span>
+              </div>
+              <p>
+                Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However,
+                when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.
+              </p>
+              <a href="movie-details.html" class="main-btn view-movie-btn"><i class="far fa-play-circle icon"></i> Watch Now</a>
+            </div>
+          </div>
+
+          <div class="banner" data-id="315162" data-type="movie">
+            <img src="imgs/hero_banners/puss-in-boots-banner.avif" alt="Puss in Boots: The Last Wish" class="background">
+            <div class="text">
+              <h1>Puss in Boots: The Last Wish</h1>
+              <div class="info">
+                <span class="date">2022</span>
+                <span class="rate">8.2</span>
+              </div>
+              <p>
+                Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine
+                lives, leaving him with only one life left. 
+              </p>
+              <a href="movie-details.html" class="main-btn view-movie-btn"><i class="far fa-play-circle icon"></i> Watch Now</a>
+            </div>
+          </div>
+
+          <div class="banner" data-id="902" data-type="show">
+            <img src="imgs/hero_banners/yugi-banner.avif" alt="Yu-Gi-Oh! Duel Monsters" class="background">
+            <div class="text">
+              <h1>Yu-Gi-Oh! Duel Monsters</h1>
+              <div class="info">
+                <span class="date">2000</span>
+                <span class="rate">8.2</span>
+              </div>
+              <p>
+                Bullies often target someone frail and weak—someone exactly like Yûgi Muto. He treasures his Millennium Puzzle, an
+                ancient Egyptian artifact that was brought into his grandfather's game shop.
+              </p>
+              <a href="movie-details.html" class="main-btn view-movie-btn"><i class="far fa-play-circle icon"></i> Watch Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-pagination swiper">
+          <div class="posters-slider swiper-wrapper">
+            <figure class="image swiper-slide active">
+              <img src="imgs/hero_banners/ninjago-poster.avif" alt="LEGO Ninjago: Dragons Rising" />
+            </figure>
+            
+            <figure class="image swiper-slide">
+              <img src="imgs/hero_banners/bakugan-poster.avif" alt="Bakugan Battle Brawlers" />
+            </figure>
+            
+            <figure class="image swiper-slide">
+              <img src="imgs/hero_banners/beyblade-poster.avif" alt="Beyblade Burst" />
+            </figure>
+            
+            <figure class="image swiper-slide">
+              <img src="imgs/hero_banners/barbie-poster.avif" alt="Barbie" />
+            </figure>
+            
+            <figure class="image swiper-slide">
+              <img src="imgs/hero_banners/puss-in-boots-poster.avif" alt="Puss in Boots: The Last Wish" />
+            </figure>
+            
+            <figure class="image swiper-slide">
+              <img src="imgs/hero_banners/yugi-poster.avif" alt="Yu-Gi-Oh! Duel Monsters" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- End Hero Section -->
+      <!-- Start Weekly Trending Movies -->
+      <section class="weekly-trending-movies movies-slider-section swiper">
+        <h2 class="main-title">Weekly Trending Movies</h2>
+        <div class="content swiper-wrapper"></div>
+        <div class="movies-slider-scrollbar swiper-scrollbar"></div>
+      </section>
+      <!-- End Weekly Trending Movies -->
+      <!-- Start Top Rated Movies -->
+      <section class="top-rated-movies movies-slider-section swiper">
+        <h2 class="main-title">Top Rated Movies</h2>
+        <div class="content swiper-wrapper"></div>
+        <div class="movies-slider-scrollbar swiper-scrollbar"></div>
+      </section>
+      <!-- End Top Rated Movies -->
+      <!-- Start Upcoming Movies -->
+      <section class="upcoming-movies movies-slider-section swiper">
+        <h2 class="main-title">Upcoming Movies</h2>
+        <div class="content swiper-wrapper"></div>
+        <div class="movies-slider-scrollbar swiper-scrollbar"></div>
+      </section>
+      <!-- End Upcoming Movies -->
+      <!-- Start Animated Shows -->
+      <section class="animated-shows movies-slider-section swiper">
+        <h2 class="main-title">Best Animated Shows</h2>
+        <div class="content swiper-wrapper"></div>
+        <div class="movies-slider-scrollbar swiper-scrollbar"></div>
+      </section>
+      <!-- End Animated Shows -->
+      <!-- Start Top TV Serieses Shows -->
+      <section class="tv-serieses movies-slider-section swiper">
+        <h2 class="main-title">Top TV Serieses</h2>
+        <div class="content swiper-wrapper"></div>
+        <div class="movies-slider-scrollbar swiper-scrollbar"></div>
+      </section>
+      <!-- End Top TV Serieses Shows -->
+    </main>
+    <!-- End Page Main Container -->
+    
+    <!-- Swiper Library -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Search JavaScript File -->
+    <script src="js/search.js" type="module"></script>
+    <!-- Genre Movies List JavaScript File -->
+    <script src="js/genre-movies-list.js" type="module"></script>
+    <!-- Movie Details JavaScript File -->
+    <script src="js/movie-details.js" type="module"></script>
+    <!-- Main JavaScript File -->
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

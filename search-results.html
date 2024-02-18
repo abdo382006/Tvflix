@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This is the best movies website made by AK Arafat." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="AK Arafat" />
+    <meta name="theme-color" content="#db0028" />
+    <!-- Website Favicon -->
+    <link rel="icon" href="favicon.svg" />
+    <!-- Normalize Library -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Swiper Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <title>Tvflix - searching for:</title>
+  </head>
+  <body>
+    <!-- Start Page Loader -->
+    <div class="page-loader" id="pageLoader">
+      <span class="loader"></span>
+    </div>
+    <!-- End Page Loader -->
+    <!-- Start Header -->
+    <header>
+      <a href="index.html" title="Home Page" class="logo"><img src="imgs/logo.svg" alt="Tvflix - Logo" /></a>
+    
+      <div class="buttons">
+        <button class="header-btn" id="searchBtn"><i class="fas fa-magnifying-glass icon"></i></button>
+      </div>
+
+      <div class="search-bar">
+        <i class="fas fa-magnifying-glass icon"></i>
+        <input type="search" name="q" id="searchInput" placeholder="Search any movie..." />
+        <button class="header-btn" id="searchCloseBtn"><i class="fas fa-xmark icon"></i></button>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Page Main Container -->
+    <main class="main-container">
+      <!-- Start Movies Grid Section -->
+      <section class="movies-grid search-results">
+        <h3 class="search-label">Results for</h3>
+        <h2 id="searchQuery" class="main-title"></h2>
+        <div class="content"></div>
+        <div class="search-empty-content">
+          <i class="far fa-face-frown icon"></i>
+          <p>Sorry, we couldn't find any results</p>
+        </div>
+      </section>
+      <!-- End Movies Grid Section -->
+    </main>
+    <!-- End Page Main Container -->
+    
+    <!-- Swiper Library -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Search JavaScript File -->
+    <script src="js/search.js" type="module"></script>
+    <!-- Movie Details JavaScript File -->
+    <script src="js/movie-details.js" type="module"></script>
+    <!-- Main JavaScript File -->
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

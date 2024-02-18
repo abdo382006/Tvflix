@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This is the best movies website made by AK Arafat." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="AK Arafat" />
+    <meta name="theme-color" content="#db0028" />
+    <!-- Website Favicon -->
+    <link rel="icon" href="favicon.svg" />
+    <!-- Normalize Library -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Swiper Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <title>Tvflix -</title>
+  </head>
+  <body>
+    <!-- Start Page Loader -->
+    <div class="page-loader" id="pageLoader">
+      <span class="loader"></span>
+    </div>
+    <!-- End Page Loader -->
+    <!-- Start Header -->
+    <header>
+      <a href="index.html" title="Home Page" class="logo"><img src="imgs/logo.svg" alt="Tvflix - Logo" /></a>
+    
+      <div class="buttons">
+        <button class="header-btn" id="searchBtn"><i class="fas fa-magnifying-glass icon"></i></button>
+        <button class="header-btn" id="genresListToggle"><i class="fas fa-bars icon"></i></button>
+      </div>
+
+      <div class="search-bar">
+        <i class="fas fa-magnifying-glass icon"></i>
+        <input type="search" name="q" id="searchInput" placeholder="Search any movie..." />
+        <button class="header-btn" id="searchCloseBtn"><i class="fas fa-xmark icon"></i></button>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Genres List -->
+    <aside class="genres-list">
+      <div class="content">
+        <h4>Genre</h4>
+        <div class="links">
+          <a href="movies-list.html" data-id="12">Adventure</a>
+          <a href="movies-list.html" data-id="14">Fantasy</a>
+          <a href="movies-list.html" data-id="16">Animation</a>
+          <a href="movies-list.html" data-id="18">Drama</a>
+          <a href="movies-list.html" data-id="27">Horror</a>
+          <a href="movies-list.html" data-id="28">Action</a>
+          <a href="movies-list.html" data-id="35">Comedy</a>
+          <a href="movies-list.html" data-id="36">History</a>
+          <a href="movies-list.html" data-id="37">Western</a>
+          <a href="movies-list.html" data-id="53">Thriller</a>
+          <a href="movies-list.html" data-id="80">Crime</a>
+          <a href="movies-list.html" data-id="10749">Romance</a>
+          <a href="movies-list.html" data-id="10751">Family</a>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>
+          Copyright <span class="year">2024</span>. <br />
+          By <span>AK Arafat</span>
+        </p>
+        <img src="imgs/tmdb-logo.svg" alt="TMDB Logo" />
+      </div>
+    </aside>
+    <!-- End Genres List -->
+    <!-- Start Page Main Container -->
+    <main class="main-container">
+      <!-- Start Movie View Section -->
+      <section class="movie-view">
+        <figure class="image">
+          <img src="" alt="" />
+        </figure>
+        <div class="content">
+          <h1 class="movie-title"></h1>
+          <div class="info">
+            <span class="rate"></span>
+            <span class="runtime"></span>
+            <span class="date"></span>
+            <span class="language"></span>
+          </div>
+          <p class="genres"></p>
+          <p class="overview"></p>
+          <div class="director-wrapper">
+            <span>Directed By</span>
+            <p class="director-name"></p>
+          </div>
+          <div class="clips swiper">
+            <h2 class="main-title">Trailers and Clips</h2>
+            <div class="videos-wrapper movies-slider-section swiper-wrapper"></div>
+            <div class="movies-slider-scrollbar swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Movie View Section -->
+      <!-- Start Similar Movies Section -->
+      <section class="similar-movies movies-slider-section swiper">
+        <h2 class="main-title">You may also like</h2>
+        <div class="content swiper-wrapper"></div>
+        <div class="movies-slider-scrollbar swiper-scrollbar"></div>
+      </section>
+      <!-- End Similar Movies Section -->
+    </main>
+    <!-- End Page Main Container -->
+    
+    <!-- Swiper Library -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Search JavaScript File -->
+    <script src="js/search.js" type="module"></script>
+    <!-- Genre Movies List JavaScript File -->
+    <script src="js/genre-movies-list.js" type="module"></script>
+    <!-- Movie Details JavaScript File -->
+    <script src="js/movie-details.js" type="module"></script>
+    <!-- Main JavaScript File -->
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
